@@ -1,0 +1,589 @@
+/* Base Styles Start */
+
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap");
+
+@font-face {
+  font-family: informal;
+  src: url(../fonts/informal.otf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+/* Colors */
+
+:root {
+  --pink: #d62149;
+  --gray: #cecfd4;
+  --dark-gray: #777779;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: informal;
+}
+
+a,
+p {
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+ol,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li,
+ol li {
+  list-style: none;
+}
+
+#Our-mission,
+#Story,
+#Team,
+#Footer {
+  padding-top: 150px;
+}
+
+.section-title {
+  font-size: 45px;
+}
+
+.section-title span {
+  color: var(--pink);
+}
+
+/* Base Styles End */
+
+/* Header Section CSS Start */
+
+#Header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.sticky {
+  background: #ffffff;
+  padding: 5px 0;
+  border-bottom: 1px solid #0000001f;
+  transition: all 0.4s ease;
+}
+
+.navbar-brand {
+  font-family: informal;
+  font-size: 20px;
+}
+li.nav-item {
+  padding: 0 5px;
+}
+.nav-link:hover {
+  color: var(--pink) !important;
+  transition: all 0.3s ease-in-out;
+}
+.nav-link {
+  color: #000000 !important;
+}
+.nav-link.navbtn {
+  background: var(--pink);
+  border: 1px solid var(--pink);
+  color: #fff !important;
+  border-radius: 5px;
+  margin-left: 50px;
+  transition: all 0.4s ease-in-out;
+}
+.nav-link.navbtn:hover {
+  background: transparent;
+  border: 1px solid var(--pink);
+  color: var(--pink) !important;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 991px) {
+  .nav-link.navbtn {
+    width: 130px;
+    text-align: center;
+    margin-left: 0px;
+  }
+}
+
+/* Header Section CSS End */
+
+/* Hero Section CSS Start */
+
+.hero-wrapper {
+  background: #dddfe7;
+  padding-bottom: 250px;
+  z-index: 1;
+}
+
+.hero-content {
+  max-width: 650px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 180px;
+}
+
+.hero-content h1 {
+  font-size: 60px;
+}
+.hero-content h1 span {
+  color: var(--pink);
+}
+
+.btn-fill {
+  background: var(--pink);
+  border: 1px solid var(--pink);
+  color: #ffffff;
+  padding: 7px 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+  transition: all 0.4s ease-in-out;
+}
+.btn-fill:hover {
+  background: transparent;
+  border: 1px solid var(--pink);
+  color: var(--pink);
+}
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--pink);
+  color: var(--pink);
+  padding: 7px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  transition: all 0.4s ease-in-out;
+}
+.btn-outline:hover {
+  background: var(--pink);
+  border: 1px solid var(--pink);
+  color: #ffffff;
+}
+.hero-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 7%;
+  bottom: 45%;
+}
+
+.hero-social img {
+  width: 70%;
+  padding: 8px 0;
+}
+.half-circle {
+  position: absolute;
+  top: 15%;
+  left: 0;
+}
+
+.hero-circle {
+  position: absolute;
+  top: 35%;
+  right: 0;
+}
+/* Hero Section CSS End */
+
+/* Section TWO CSS Start */
+
+.sec-two-wrapper {
+  margin-top: -220px;
+}
+.sec-two-card {
+  padding: 10px;
+}
+.sec-two-card h2 {
+  font-family: "Nunito";
+  font-size: 50px;
+  color: var(--gray);
+  text-align: center;
+  padding-top: 10px;
+}
+.sec-two-img-1,
+.sec-two-img-2,
+.sec-two-img-3 {
+  z-index: 1;
+}
+.sec-two-img-1::after,
+.sec-two-img-2::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--dark-gray);
+  top: -15px;
+  left: -15px;
+  z-index: -1;
+}
+.sec-two-img-3::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--dark-gray);
+  top: -15px;
+  right: -15px;
+  z-index: -1;
+}
+
+/* Section TWO CSS End */
+
+/* Our Mission CSS Start */
+
+.special-nft-title {
+  max-width: 580px;
+  padding-bottom: 30px;
+}
+
+.mission-img {
+  max-width: 90%;
+}
+
+.mission-img::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--dark-gray);
+  top: -15px;
+  left: -15px;
+  z-index: -1;
+}
+.mission-content {
+  padding-right: 50px;
+}
+.mission-shadow {
+  position: absolute;
+  max-width: 25%;
+  top: 0;
+  right: 0;
+}
+
+/* Our Mission CSS End */
+
+/* Special NFT Section CSS Start */
+
+.special-nft-wrapper {
+  background: url(../images/shape.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 200px 0;
+}
+
+.special-nft-card {
+  padding: 0 5px;
+  text-align: center;
+}
+
+.special-nft-card h2 {
+  font-family: "Nunito";
+  font-size: 50px;
+  color: var(--gray);
+}
+.special-nft-card h4 {
+  font-size: 25px;
+  padding-top: 15px;
+}
+.nft-card-title {
+  padding-top: 10px;
+}
+
+.nft-card-title h5 {
+  font-size: 16px;
+  margin: 0;
+}
+.nft-card-active {
+  position: relative;
+  padding: 15px 15px 20px 15px;
+  border: 3px solid #000000;
+}
+
+.nft-card-active h6 {
+  font-size: 18px;
+  text-align: left;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+.special-nft-timer {
+  margin-top: -20px;
+}
+
+.special-nft-timer h5 {
+  font-size: 18px;
+}
+.special-nft-timer h6 {
+  font-size: 18px;
+  color: var(--pink);
+}
+
+.special-nft-btn,
+.special-nft-btn:hover,
+.special-nft-btn:focus {
+  background: var(--pink);
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/* Special NFT Section CSS End */
+
+/* Game Section CSS Start */
+
+.game-img,
+.story-img {
+  max-width: 90%;
+}
+.story-content {
+  padding-right: 50px;
+}
+.story-img::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--dark-gray);
+  top: -15px;
+  right: -15px;
+  z-index: -1;
+}
+
+/* Game Section CSS End */
+
+/* About Section CSS Start */
+
+.about-wrapper {
+  background: url(../images/shape.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 200px 0;
+}
+
+.about-img {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.about-img img {
+  max-width: 20%;
+}
+
+/* About Section CSS End */
+
+/* Team Section CSS Start */
+
+.team-title,
+.about-title {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.team-card-img {
+  background: #000000;
+  padding: 10px;
+}
+
+.team-card h2 {
+  font-size: 30px;
+  padding-top: 10px;
+  color: #000000;
+}
+
+.team-card h5 {
+  font-size: 18px;
+  color: #000000;
+}
+
+.team-card a img {
+  max-width: 12%;
+  width: 100%;
+}
+
+/* Team Section CSS End */
+
+/* Footer Section HTML Start */
+
+.footer-circle {
+  position: absolute;
+  left: 35%;
+  top: -20%;
+}
+
+.footer-content {
+  padding-right: 50px;
+}
+.footer-img {
+  max-width: 90%;
+  margin: auto;
+}
+hr:not([size]) {
+  height: 2px;
+  color: var(--dark-gray);
+  opacity: 1;
+}
+.footer-copyright {
+  font-weight: 600;
+  text-align: center;
+  color: #000000;
+}
+
+/* Footer Section HTML End */
+
+/* Media Queries for Responsive Design */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero-content h1 {
+    font-size: 45px;
+  }
+  .hero-social {
+    left: 5%;
+  }
+  .mission-img {
+    max-width: 100%;
+  }
+  .mission-content {
+    padding-right: 0px;
+  }
+  .section-title {
+    font-size: 35px;
+  }
+  .nft-card-title h5 {
+    font-size: 16px;
+  }
+  .nft-card-active h6,
+  .special-nft-timer h5 {
+    font-size: 15px;
+  }
+  .special-nft-btn {
+    width: 130px;
+  }
+  .game-img,
+  .story-img {
+    max-width: 100%;
+  }
+  .story-content {
+    padding-right: 0px;
+  }
+  .team-card {
+    margin-bottom: 50px;
+  }
+  .footer-content {
+    padding-right: 0px;
+  }
+  .footer-img {
+    max-width: 100%;
+  }
+}
+@media (min-width: 374px) and (max-width: 767px) {
+  #Our-mission,
+  #Story,
+  #Team,
+  #Footer {
+    padding-top: 80px;
+  }
+  #Header {
+    background: #ffffff;
+  }
+  .hero-content {
+    padding: 100px 20px 0px 20px;
+  }
+  .hero-content h1 {
+    font-size: 30px;
+  }
+  .hero-social {
+    left: -10px;
+    bottom: 70%;
+  }
+  .hero-social img {
+    max-width: 45%;
+  }
+  .half-circle,
+  .hero-circle {
+    display: none;
+  }
+  .sec-two-img-2 {
+    margin-bottom: 50px;
+  }
+  .mission-img {
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
+  .mission-content {
+    padding-right: 0px;
+  }
+  .special-nft-wrapper,
+  .about-wrapper {
+    padding: 100px 0;
+  }
+  .special-nft-card {
+    margin-bottom: 50px;
+  }
+  .section-title {
+    font-size: 25px;
+  }
+  .nft-card-title h5 {
+    font-size: 16px;
+  }
+  .nft-card-active h6,
+  .special-nft-timer h5 {
+    font-size: 15px;
+  }
+  .game-content {
+    margin-top: 50px;
+  }
+  .game-img,
+  .story-img {
+    max-width: 100%;
+  }
+  .story-img {
+    margin-right: 15px;
+  }
+  .story-content {
+    padding-right: 0px;
+    margin-bottom: 70px;
+  }
+  .about-img img {
+    max-width: 100%;
+    margin: auto;
+  }
+  .team-card {
+    margin-bottom: 50px;
+  }
+  .footer-content {
+    padding-right: 0px;
+  }
+  .footer-img {
+    max-width: 100%;
+    margin-top: 50px;
+  }
+}
