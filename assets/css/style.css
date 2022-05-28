@@ -60,6 +60,7 @@ ol li {
 #Our-mission,
 #Story,
 #Team,
+#Faq,
 #Footer {
   padding-top: 150px;
 }
@@ -401,7 +402,8 @@ li.nav-item {
 /* Team Section CSS Start */
 
 .team-title,
-.about-title {
+.about-title,
+.faq-title {
   max-width: 700px;
   margin: auto;
   text-align: center;
@@ -430,6 +432,36 @@ li.nav-item {
 }
 
 /* Team Section CSS End */
+
+/* Accordion Section CSS Start */
+
+.accordion {
+  margin: 0px 100px;
+}
+.accordion-item {
+  margin-bottom: 20px;
+  border: 1px solid #dfdfdf !important;
+}
+.accordion-button:focus {
+  border-color: #86b7fe;
+  box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+  color: var(--pink);
+}
+.accordion-button {
+  font-family: "Nunito";
+  font-size: 18px;
+  font-weight: 600;
+}
+.accordion-body {
+  padding: 10px;
+}
+.accordion-body p {
+  margin: 0;
+}
+
+/* Accordion Section CSS End */
 
 /* Footer Section HTML Start */
 
@@ -497,6 +529,9 @@ hr:not([size]) {
   .team-card {
     margin-bottom: 50px;
   }
+  .accordion {
+    margin: 0px 10px;
+  }
   .footer-content {
     padding-right: 0px;
   }
@@ -508,6 +543,7 @@ hr:not([size]) {
   #Our-mission,
   #Story,
   #Team,
+  #Faq,
   #Footer {
     padding-top: 80px;
   }
@@ -578,6 +614,12 @@ hr:not([size]) {
   }
   .team-card {
     margin-bottom: 50px;
+  }
+  .accordion {
+    margin: 0px 10px;
+  }
+  .footer-circle {
+    top: -15%;
   }
   .footer-content {
     padding-right: 0px;
